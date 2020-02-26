@@ -38,7 +38,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ibJ-4N-sx0" kind="show" id="6cB-bK-FhG"/>
+                                    <segue destination="CUc-q8-331" kind="show" identifier="toCredits" id="6cB-bK-FhG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kge-xV-LS2">
@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yvu-QA-Rw3" kind="show" id="Yma-0N-Ls3"/>
+                                    <segue destination="Yvu-QA-Rw3" kind="show" identifier="toTutorial" id="Yma-0N-Ls3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hca-uO-daH">
@@ -69,13 +69,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.92099208050000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fUy-YD-0Rj" kind="show" id="MJg-F5-acs"/>
+                                    <segue destination="fUy-YD-0Rj" kind="show" identifier="toGame" id="MJg-F5-acs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eG7-xw-tYN"/>
                     <connections>
                         <outlet property="menuView" destination="8bC-Xf-vdC" id="UUU-H3-pVz"/>
                     </connections>
@@ -84,21 +85,25 @@
             </objects>
             <point key="canvasLocation" x="445" y="-503"/>
         </scene>
-        <!--Credits View Controller-->
+        <!--Credits-->
         <scene sceneID="5pT-kL-lwx">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ibJ-4N-sx0" customClass="CreditsViewController" customModule="BreakTheSquare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bt0-mZ-CVG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Z3e-r6-ZlB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Y0A-fn-QPI"/>
+                    <navigationItem key="navigationItem" title="Credits" id="Y0A-fn-QPI">
+                        <barButtonItem key="leftBarButtonItem" title="Back to Menu" id="HXz-C5-gce">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emh-dt-5dg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="214"/>
+            <point key="canvasLocation" x="1212" y="973"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="96j-yv-0Cp">
@@ -107,6 +112,14 @@
                     <view key="view" contentMode="scaleToFill" id="LJf-MI-Xid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqL-2Y-Umv">
+                                <rect key="frame" x="140" y="167" width="135" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="[Square Images]"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VuF-BT-5I4"/>
                     </view>
@@ -114,9 +127,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6d0-x3-b6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="214"/>
+            <point key="canvasLocation" x="-297.10144927536237" y="213.61607142857142"/>
         </scene>
-        <!--Tutorial View Controller-->
+        <!--General-->
         <scene sceneID="S82-QR-6Ik">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="iy0-nS-ZI6" customClass="TutorialViewController" customModule="BreakTheSquare" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +139,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VQP-vE-xnd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="12m-jH-DbA"/>
+                    <navigationItem key="navigationItem" title="General" id="12m-jH-DbA">
+                        <barButtonItem key="leftBarButtonItem" title="Back to Menus" id="YkE-wo-ZrI">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="returnToMenus:" destination="iy0-nS-ZI6" id="noe-f7-Khx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Continue" id="BZX-Vj-wyA">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="continueWithTutorial:" destination="iy0-nS-ZI6" id="8pX-4c-rIa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="continueTutorialButton" destination="BZX-Vj-wyA" id="8Bn-xu-XZa"/>
+                        <outlet property="toMenusButton" destination="YkE-wo-ZrI" id="DYg-qk-hOW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuD-NG-JJF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,6 +180,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmJ-po-9du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="214"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BGt-R9-xh8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="CUc-q8-331" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Hy9-M5-nGt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="blv-DV-fD6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ibJ-4N-sx0" kind="relationship" relationship="rootViewController" id="IM3-Du-Vsg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybt-6d-ZaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211.5942028985507" y="213.61607142857142"/>
         </scene>
     </scenes>
     <resources>

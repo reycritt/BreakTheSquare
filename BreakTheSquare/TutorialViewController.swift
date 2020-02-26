@@ -9,14 +9,27 @@
 import UIKit
 
 class TutorialViewController: UIViewController {
-
+    
+    @IBOutlet weak var toMenusButton: UIBarButtonItem!//Returns to menus
+    @IBOutlet weak var continueTutorialButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    
+    
+    @IBAction func returnToMenus(_ sender: Any) {
+        //performSegue(withIdentifier: "toMenu", sender: self)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func continueWithTutorial(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 
