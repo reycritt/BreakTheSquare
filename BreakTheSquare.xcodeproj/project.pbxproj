@@ -12,7 +12,6 @@
 		44086D742406D9C80045C4B0 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44086D732406D9C80045C4B0 /* CreditsViewController.swift */; };
 		8B0FB27024064788008BBC0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FB26F24064788008BBC0D /* AppDelegate.swift */; };
 		8B0FB27224064788008BBC0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FB27124064788008BBC0D /* SceneDelegate.swift */; };
-		8B0FB27424064788008BBC0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FB27324064788008BBC0D /* ViewController.swift */; };
 		8B0FB27724064788008BBC0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FB27524064788008BBC0D /* Main.storyboard */; };
 		8B0FB2792406478B008BBC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FB2782406478B008BBC0D /* Assets.xcassets */; };
 		8B0FB27C2406478B008BBC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FB27A2406478B008BBC0D /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		8B0FB26C24064788008BBC0D /* BreakTheSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakTheSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0FB26F24064788008BBC0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0FB27124064788008BBC0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B0FB27324064788008BBC0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B0FB27624064788008BBC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B0FB2782406478B008BBC0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0FB27B2406478B008BBC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				8B0FB27124064788008BBC0D /* SceneDelegate.swift */,
 				8B0FB29F24064B71008BBC0D /* MenuViewController.swift */,
 				44086D6F2406D9A70045C4B0 /* GameViewController.swift */,
-				8B0FB27324064788008BBC0D /* ViewController.swift */,
 				44086D712406D9BD0045C4B0 /* TutorialViewController.swift */,
 				44086D732406D9C80045C4B0 /* CreditsViewController.swift */,
 				8B0FB2782406478B008BBC0D /* Assets.xcassets */,
@@ -273,7 +270,6 @@
 			files = (
 				44086D702406D9A70045C4B0 /* GameViewController.swift in Sources */,
 				44086D742406D9C80045C4B0 /* CreditsViewController.swift in Sources */,
-				8B0FB27424064788008BBC0D /* ViewController.swift in Sources */,
 				8B0FB27024064788008BBC0D /* AppDelegate.swift in Sources */,
 				8B0FB27224064788008BBC0D /* SceneDelegate.swift in Sources */,
 				44086D722406D9BD0045C4B0 /* TutorialViewController.swift in Sources */,
